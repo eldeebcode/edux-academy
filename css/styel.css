@@ -22,15 +22,6 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
-.vanta-overlay {
-  position: absolute;
-  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; */
-  background-color: rgba(0, 0, 0, 0.3); /* اللون + الشفافية */
-  pointer-events: none; /* عشان ميتعارضش مع التفاعل */
-  z-index: 1;
-}
-
 .navbar {
       background: rgba(29, 10, 10, 0.055);
       backdrop-filter: blur(10px);
