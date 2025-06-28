@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Edux Academy</title>
+
+  <!-- ==========>>> Link Logo Title <<<========== -->
+  <link rel="icon" type="image/png" href="imges/logo.png" />
+
+  <!--  ==========>>> Link Bootstrap <<<========== -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="font/Inter-VariableFont_opsz,wght.ttf">
+
+  <!-- ==========>>> Link Script Card Courses <<<==========  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!--  ==========>>> Css <<<========== -->
+  <link rel="stylesheet" href="css/styel.css" />
+
+  <!--  ==========>>> Media Query <<<========== -->
+  <link rel="stylesheet" href="css/media-query.css" />
+</head>
+
+<body>
+  <!--  ==========>>> BackGround Anmictan <<<========== -->
+  <div id="background">
+    <div class="vanta-overlay"></div>
+  </div>
+
+  <!-- ==========>>> Start NavBar <<<==========  -->
+
+  <nav id="navbar" class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="imge-logo" src="imges/logo.webp" alt="logo" loading="lazy" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- All links NavBar -->
+          <li class="nav-item">
+            <a class="active nav-link" aria-current="page" href="index.html" data-lang="nav_home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html" data-lang="nav_about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact-us.html" data-lang="nav_contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- input Search -->
+        <div class="search col-12 col-lg-3 my-2 my-lg-0">
+          <div class="input-group">
+            <input type="text" class="form-control" id="search" placeholder="Search Courses"
+              aria-label="Search Courses" />
+            <span class="input-group-text">
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </div>
+        <div class="login-ar d-flex col-12 col-lg-4">
+          <a class="nav-link col-5" href="login.html" role="button">
+            <div class="login text-center">
+              <span class="btn text-white" data-lang="nav_login">login</span>
+            </div>
+          </a>
+
+          <!-- Language -->
+          <button id="lang-toggle" class="language btn btn-primary col-3 col-lg-3">
+            Ar
+          </button>
+          <div class="icon-container d-flex-center col-3">
+            <div class="position-relative">
+              <a href="#">
+                <span class="cart-icon">
+                  <i class="bi bi-cart"></i>
+                  <span class="badge-custom d-flex-center" id="cart-badge"></span>
+                </span>
+              </a>
+            </div>
+            <div class="position-relative">
+              <a href="#">
+                <span class="bell-icon">
+                  <span id="Notice" class="Notice">
+                    <i class="bi bi-bell"></i>
+                  </span>
+                  <span class="badge-custom d-flex-center" id="bell-badge"></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===============>>> End NavBar <<<=============== -->
+
+  <!-- ==========>>> Start section background About <<<==========  -->
+
+  <div class="hero d-flex align-items-center position-relative" dir="ltr">
+    <div class="hero-content px-4 text-white">
+      <h1 class="display-4 fw-bold" data-lang="about_title">
+        The Perfect Time to Invest in Yourself!
+      </h1>
+      <p class="lead" data-lang="description_about">Get 90% off on our programs</p>
+      <a href="#about" class="btn btn-light mt-3 text-white fw-bold" data-lang="btn_about">Start Now</a>
+    </div>
+  </div>
+
+  <!-- ===============>>> End section background About <<<=============== -->
+
+  <!-- ==========>>> Start Mission And Vision <<<==========  -->
+  <div id="about" class="section bg-light text-center fade-in">
+    <div class="container p-4">
+      <!-- EDUX Intro -->
+      <div class="row section-row align-items-center mb-4">
+        <div class="col-lg-6 order-2 order-lg-2 p-0">
+          <img class="section-img" src="imges/edux.webp" alt="Classroom" loading="lazy" />
+        </div>
+        <div class="col-lg-6 order-1 order-lg-1 section-content ">
+          <h2 class="section-title" data-lang="title_edux">EDUX</h2>
+          <p class="fs-5 text-secondary" data-lang="description_edux">
+            EDUX is a full-fledged academy established in 2018 and located in
+            Dokki. We help students and graduates improve their skills in
+            every section of their future through our special courses.
+          </p>
+        </div>
+      </div>
+      <!-- Mission -->
+      <div class="row section-row align-items-center flex-lg-row-reverse mb-4">
+        <div class="col-lg-6 order-1 order-lg-1 section-content">
+          <h3 class="section-title" data-lang="title_mission">Our Mission</h3>
+          <p class="fs-5 text-secondary" data-lang="description_mission">
+            EDUX Academy will work collaboratively with students, graduates,
+            instructors, and the community to educate our customers and foster
+            life-long learning, help all students reach their full potential,
+            and develop successful, responsible, and ethical citizens in a
+            global community.
+          </p>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 p-0 ">
+          <img src="imges/mission.webp" alt="Mission" class="section-img" />
+        </div>
+      </div>
+      <!-- Vision -->
+      <div class="row section-row align-items-center mb-4">
+        <div class="col-lg-6 order-2 order-lg-2 p-0">
+          <img src="imges/vision.webp" alt="Vision" loading="lazy" class="section-img" />
+        </div>
+        <div class="col-lg-6 order-1 order-lg-1 section-content">
+          <h3 class="section-title" data-lang="title_vision">Our Vision</h3>
+          <p class="fs-5 text-secondary" data-lang="description_vision">
+            Our vision is to prepare students for 21st-century careers by
+            challenging them with cutting-edge technology and the latest
+            innovations in the job markets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===============>>> End Mission And Vision <<<=============== -->
+
+  <!-- ==========>>> Start Video In About Us <<<========== -->
+
+  <div class="container-fluid py-5 position-relative bg-light">
+    <div class="position-absolute top-50 start-0 w-100 translate-middle-y blue-bar-custom"></div>
+
+    <div class="position-relative mx-auto shadow rounded-4 overflow-hidden video-card-custom">
+      <img src="imges/code.webp" class="w-100 h-100 object-fit-cover" alt="Video Thumbnail" loading="lazy" />
+      <div
+        class="position-absolute top-0 start-0  w-100 h-100 d-flex flex-column justify-content-center align-items-center video-overlay-custom">
+        <button id="playBtn"
+          class="pulse-btn btn btn-light rounded-circle d-flex align-items-center justify-content-center mb-3 border-0 play-btn-custom">
+          <i class="bi bi-play-fill text-primary play-icon-custom"></i>
+        </button>
+        <div class="fw-bold text-white fs-5 mt-2 text-center" data-lang="title_video">
+          Start learning anywhere, anytime...
+        </div>
+        <div class="text-white text-center small" data-lang="description_video">
+          Use EDUX to access high-quality education materials without any
+          limitations in the easiest way.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0 shadow-none">
+        <div class="rounded-4 overflow-hidden w-100  video-modal-iframe-bg-custom">
+          <iframe id="videoFrame" width="100%" height="90%" src="" allow="autoplay; encrypted-media" allowfullscreen
+            class="video-iframe-custom"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===============>>> End Video In About Us <<<=============== -->
+
+  <!-- ==========>>> Start FeedBack <<<========== -->
+  <div class="feedback">
+    <div class="container py-5" dir="ltr">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Original 6 feedback -->
+          <!-- Slide One -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_james">James Carter</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_one">
+                Great platform! The courses are well-structured and the
+                trainers are really helpful. Highly recommended!
+              </p>
+            </div>
+          </div>
+          <!-- Slide Two -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_linda">Linda Brown</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_two">
+                I learned so much from the Business English course. The
+                content was practical and easy to follow.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Three -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_michael">Michael Lee</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_three">
+                Risk Management course was a game changer for my career. The
+                examples were very relevant.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Four -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="" />
+              <h6 data-lang="name_emily">Emily Clark</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_four">
+                The instructors are knowledgeable and always ready to answer
+                questions. Loved the interactive sessions!
+              </p>
+            </div>
+          </div>
+          <!-- Slide Five -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/27.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_david">David Kim</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_five">
+                Very smooth experience. The platform is user-friendly and the
+                feedback system is awesome.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Six -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="" />
+              <h6 data-lang="name_sophia">Sophia Turner</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_six">
+                I keep coming back for more courses! The variety and quality
+                are top-notch. Thank you!
+              </p>
+            </div>
+          </div>
+          <!-- Clone the same 6 feedback for seamless infinite scroll -->
+          <!-- Slide One -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_james">James Carter</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_one">
+                Great platform! The courses are well-structured and the
+                trainers are really helpful. Highly recommended!
+              </p>
+            </div>
+          </div>
+          <!-- Slide Two -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_linda">Linda Brown</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_two">
+                I learned so much from the Business English course. The
+                content was practical and easy to follow.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Three -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_michael">Michael Lee</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_three">
+                Risk Management course was a game changer for my career. The
+                examples were very relevant.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Four -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_emily">Emily Clark</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_four">
+                The instructors are knowledgeable and always ready to answer
+                questions. Loved the interactive sessions!
+              </p>
+            </div>
+          </div>
+          <!-- Slide Five -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/men/27.jpg" alt="" />
+              <h6 data-lang="name_david">David Kim</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_five">
+                Very smooth experience. The platform is user-friendly and the
+                feedback system is awesome.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Six -->
+          <div class="swiper-slide d-flex-center">
+            <div class="feedback-card">
+              <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="" loading="lazy" />
+              <h6 data-lang="name_sophia">Sophia Turner</h6>
+              <div class="stars">★★★★★</div>
+              <p data-lang="title_six">
+                I keep coming back for more courses! The variety and quality
+                are top-notch. Thank you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===============>>> End FeedBack <<<=============== -->
+
+  <!-- ==========>>> Start Button Scroll Top <<<========== -->
+  <button id="scroll-top-btn" class="btn-scroll">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <!-- ===============>>> End Start Button Scroll Top <<<=============== -->
+
+  <!-- ==========>>> Start Questions <<<========== -->
+
+  <div class="questions bg-light">
+    <div class="container py-1 i-questions">
+      <h3 class="faq-title" data-lang="header_questions">Trainees' Questions</h3>
+      <div class="divider"></div>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header " id="headingOne">
+            <button class="accordion-button d-flex flex-row justify-content-between align-items-center collapsed "
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+              aria-controls="collapseOne" data-lang="one_question">
+              1. What is EDUX Platform ?
+              <span class="ms-2 icon-left"></span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <p class="accordion-body" data-lang="response_one">
+              Al-Saq is a digital educational platform designed specifically
+              for Arabic speakers. It offers a wide range of pre-recorded
+              video courses delivered by specialized experts. The platform
+              aims to help you enrich your knowledge and develop your skills
+              in various fields.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button d-flex  justify-content-between flex-row align-items-center collapsed"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo" data-lang="two_question">
+              2. Who is EDUX Platform suitable for ?
+              <span class="ms-2 icon-left"></span>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <p class="accordion-body" data-lang="response_two">
+              It is suitable for everyone who wants to learn in Arabic,
+              whether students, professionals, or anyone seeking
+              self-development in various fields.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button d-flex flex-row justify-content-between align-items-center collapsed"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree" data-lang="three_question">
+              3. What courses are available on EDUX ?
+              <span class="ms-2 icon-left"></span>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
+            <p class="accordion-body" data-lang="response_three">
+              The courses cover a variety of fields such as technology,
+              business, self-development, languages, and much more.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button d-flex flex-row justify-content-between align-items-center collapsed"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+              aria-controls="collapseFour" data-lang="four_question">
+              4. What does the EDUX subscription include ?
+              <span class="ms-2 icon-left"></svg></span>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
+            <p class="accordion-body" data-lang="response_four">
+              The subscription gives you unlimited access to all training
+              courses on the platform throughout your subscription period.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button d-flex flex-row justify-content-between align-items-center collapsed"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+              aria-controls="collapseFive" data-lang="five_question">
+              5. How much does the EDUX subscription cost ?
+              <span class="ms-2 icon-left"></span>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion">
+            <p class="accordion-body" data-lang="response_five">
+              The subscription cost varies depending on the selected plan. You
+              can find all the details on the pricing page of the website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===============>>> End questions <<<=============== -->
+
+  <!-- ==========>>> Start Footer <<<========== -->
+  <footer class="text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="fw-bold" data-lang="edux_academy">EDUX Academy</h4>
+          <p data-lang="description_eduxOne">
+            EDUX Academy is an integrated academy established in 2018 and
+            located in Dokki.
+          </p>
+          <p data-lang="description_eduxTwo">
+            We help students and graduates improve their level in every
+            section of their future through our special courses.
+          </p>
+          <!-- Social icons -->
+          <div class="d-flex gap-3 mt-3 icons-footer">
+            <a href="#" class="text-light p-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/edux.eg" class="text-light p-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/eduxacademyeg" class="text-light p-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@eduxacademyeg" class="text-light p-2"><i class="bi bi-tiktok"></i></a>
+            <a href="https://wa.me/201012129534" class="text-light p-2"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-uppercase fw-semibold mb-3" data-lang="links_footer">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html" class="text-light text-decoration-none" data-lang="nav_home">Home</a>
+            </li>
+            <li>
+              <a href="about-us.html" class="text-light text-decoration-none" data-lang="nav_contact">About us</a>
+            </li>
+            <li>
+              <a href="Contact-us.html" class="text-light text-decoration-none" data-lang="nav_about">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-uppercase fw-semibold mb-3" data-lang="our_courses">Our Courses</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-light text-decoration-none" data-lang="full_stack">Full-Stack</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none" data-lang="php_laravel">Development(PHP/Laravel)</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none" data-lang="back_node">Development (Node.JS)</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none" data-lang="hacking">Ethical Hacking & InfoSec</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none" data-lang="graphic_design">Graphic design</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-uppercase fw-semibold mb-3" data-lang="nav_contact">Contact Us</h5>
+          <p data-lang="address_edux">A108 Adam Street<br />Dokki, Giza, Egypt</p>
+          <p><strong>Phone:</strong> +20 101 212 9534</p>
+          <p><strong>Phone:</strong> +966532354826</p>
+          <p><strong>Email:</strong> info@edux-academy.com</p>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <hr class="border-light mt-4" />
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 small">
+          © Copyright <strong>EDUX Academy</strong>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===============>>> End Footer <<<=============== -->
+
+  <!-- ==========>>> Link Script Card Courses <<<==========  -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--  => BackGround Anmictan <=  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <!--  => Link Script BootStrap <=  -->
+  <script src="bootstrap/bootstrap.bundle.js"></script>
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script> -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!--  => Script Js <=  -->
+  <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
+</body>
+
+</html>

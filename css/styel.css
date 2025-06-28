@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+html,
+body {
+  user-select: none !important;
+  font-family: "Inter", sans-serif;
+}
+/* ==========>>> BackGround Anmictan <<<========== */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-image: url("//home.jpg");
+}
+/* ==========>>> BackGround Anmictan <<<========== */
+
+/* ==========>>> Start NavBar <<<========== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.034);
+}
+.nav-link {
+  --bs-nav-link-hover-color: var(--bs-navbar-click-color);
+  color: #0049af;
+}
+.navbar-collapse {
+  justify-content: space-evenly;
+}
+.navbar .imge-logo {
+  width: 70px;
+}
+.navbar li a {
+  margin: 0 10px;
+  color: #0a56c0;
+  font-size: clamp(1rem, 1vw, 2rem);
+  transition: color 0.2s, border-bottom 0.2s;
+  display: inline-block;
+}
+.navbar li a.active {
+  border-bottom: 2.5px solid #0049af;
+  color: #00337c !important;
+}
+.navbar-toggler-icon {
+  filter: brightness(0);
+}
+.search {
+  padding: 3px;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+}
+.search .input-group input {
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+  background: transparent !important;
+}
+.search .input-group-text {
+  font-size: 18px;
+  border: none;
+  background: transparent !important;
+}
+/* ==========>>> Button Login in NavBer <<<========== */
+.login-ar {
+  justify-content: space-between;
+}
+.login {
+  background-color: #0049af;
+  border-radius: 25px;
+}
+.language {
+  background-color: #0049af;
+  border-radius: 25px;
+  border: none;
+}
+.language:hover,
+.login:hover {
+  background-color: #00337c;
+}
+.login span {
+  padding: 10px;
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+.icon-container {
+  gap: 15px;
+}
+.cart-icon,
+.bell-icon {
+  position: relative;
+  font-size: 20px;
+  color: #00337c;
+}
+.badge-custom {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background: #00337c;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  min-width: 20px;
+  min-height: 20px;
+}
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ==========>>> End NavBar <<<========== */
+
+/* ==========>>> Start Card Home <<<========== */
+.video-card {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.video-card:hover video {
+  transform: scale(1.05);
+}
+#bg-video {
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+.video-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 61%);
+  z-index: 1;
+}
+.video-card .video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+.video-card .video-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: clamp(3rem, 2vw, 2rem);
+}
+.video-card .video-content h1 span {
+  color: #0049af !important;
+}
+.video-card .video-content p {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video-card .buttons {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.video-card .buttons button {
+  padding: 20px 45px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00337c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.video-card .buttons button.secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 19px 32px;
+}
+.video-card .buttons button:hover {
+  background-color: #01285f;
+}
+.video-card .buttons button.secondary:hover {
+  background-color: #fff;
+  color: #00337c;
+}
+/* ==========>>> End Card Home <<<========== */
+
+/* ==========>>> Start Card Courses <<<========== */
+.courses .featured {
+  color: #fff;
+}
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #0049af;
+  margin: 0 auto 32px auto;
+  border-radius: 2px;
+}
+.badge-featured {
+  background: #0049af;
+  color: #f1f5fa;
+  font-size: 0.85rem;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.star-rating {
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.star {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  fill: #ccc;
+  transition: fill 0.2s;
+}
+.product-card {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.3s ease;
+}
+.product-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 73, 175, 0.336);
+  /* margin-top: -3px; */
+  transform: scale(1.1);
+}
+.product-old-price {
+  color: #bbb;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+.star.selected {
+  fill: #0049af;
+}
+/* ==========>>> End Card Courses <<<========== */
+
+/* ==========>>> Start Feature <<<========== */
+.section-home {
+  background: url("..//imges/feed.webp") no-repeat center center/cover;
+}
+.feature-icon {
+  font-size: 2.5rem;
+  color: #01357c;
+  margin-bottom: 15px;
+}
+.feature-box {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.13);
+}
+.feature-box:hover .feature-icon,
+.feature-box:hover {
+  background-color: #00337c;
+  color: white;
+}
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
+/* ==========>>> End Feature <<<========== */
+
+/* ==========>>> Start FeedBack <<<========== */
+.feedback {
+  background-color: #fff;
+}
+.swiper {
+  padding: 40px 0;
+}
+.feedback-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 32px 20px 24px 20px;
+  text-align: center;
+  width: 320px;
+  max-width: 90vw;
+  margin: 0 8px;
+  min-height: 265px;
+}
+.feedback-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+.feedback-card h6 {
+  font-weight: bold;
+  color: #6c63ff;
+  margin-bottom: 6px;
+}
+.feedback-card .stars {
+  color: #00337c;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.feedback-card p {
+  font-size: 0.97rem;
+  color: #444;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .feedback-card {
+    width: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback-card {
+    width: 90vw;
+  }
+}
+/* ==========>>> End FeedBack <<<========== */
+
+/* ==========>>> Button Scroll <<<========== */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  background-color: #00337c;
+}
+.btn-scroll {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #00337c;
+  color: #fff;
+  border: 1px solid #ffffff56;
+}
+/* ==========>>> Start Footer <<<========== */
+footer {
+  background-color: #031c3fef;
+}
+.icons-footer a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+/* ==========>>> End Footer <<<========== */
+
+/* ===========================================
+==========>>> Start File About Us <<<=========
+==============================================
+*/
+
+/* ==========>>> Start section background About <<<========== */
+.hero {
+  height: 100vh;
+  background: url("..//imges/about.webp") no-repeat center center/cover;
+  background-position: 80% center;
+  background-attachment: fixed;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-content a {
+  background-color: transparent;
+  padding: 10px 25px;
+}
+.hero-content a:hover {
+  color: #00337c;
+}
+/* ==========>>> End Start section background About <<<========== */
+
+/* ==========>>> Start Mission And Vision <<<========== */
+
+.section-row {
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  min-height: 250px;
+}
+.section-row:hover {
+  background-color: #00337c;
+  transition: background-color 0.3s, color 0.3s;
+}
+.section-row:hover .text-secondary,
+.section-row:hover .section-title {
+  color: #fff !important;
+}
+.section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.section-title {
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767.98px) {
+  .section-content {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+  }
+  .section-row {
+    margin-bottom: 1.5rem;
+  }
+}
+/* ==========>>> End Mission And Vision <<<========== */
+
+/* ==========>>> Start Video In About Us <<<========== */
+.blue-bar-custom {
+  background-color: #00337c !important;
+  height: 300px;
+}
+.pulse-btn {
+  position: relative;
+  overflow: visible;
+}
+.pulse-btn::after,
+.pulse-btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.38);
+  z-index: 0;
+  pointer-events: none;
+}
+.pulse-btn::after {
+  transform: translate(-50%, -50%) scale(1);
+  animation: pulse 2s infinite;
+  opacity: 1;
+}
+.pulse-btn::before {
+  transform: translate(-50%, -50%) scale(1);
+  animation: pulse 2s infinite 1s;
+  opacity: 1;
+}
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.7);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.1);
+    opacity: 0;
+  }
+}
+.min-h-400 {
+  min-height: 400px;
+}
+.blue-bar-custom {
+  height: 200px;
+  background: #274574;
+  z-index: 1;
+}
+.video-card-custom {
+  max-width: 820px;
+  height: 410px !important;
+  z-index: 2;
+}
+.video-overlay-custom {
+  background: rgba(0, 0, 0, 0.15);
+}
+.play-btn-custom {
+  width: 70px;
+  height: 70px;
+}
+.play-icon-custom {
+  font-size: 3.2rem;
+  z-index: 1;
+}
+.video-modal-iframe-bg-custom {
+  background: #000;
+}
+.video-iframe-custom {
+  border-radius: 16px;
+  border: none;
+  background: #000;
+  width: 100%;
+  height: 80vh;
+  display: block;
+}
+/* ==========>>> End Video In About Us <<<========== */
+
+/* ==========>>> Start questions <<<========== */
+.i-questions {
+  padding: 0 10% 0 10%;
+}
+.faq-title {
+  text-align: center;
+  margin: 0 0 22px 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00337c;
+}
+.accordion-button {
+  background: #f1f1f1;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: #00337c;
+  border-radius: 12px 12px 0 0 !important;
+  margin-bottom: 1px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background: #f5f5f5;
+  color: #00337c;
+  border: none;
+}
+.accordion-button::after {
+  filter: invert(27%) sepia(95%) saturate(1215%) hue-rotate(199deg)
+    brightness(97%) contrast(101%) !important;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-collapse.collapse {
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+.accordion-collapse.collapse.show {
+  max-height: 500px;
+  opacity: 1;
+}
+.accordion-collapse.collapse:not(.show) .accordion-body {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.accordion-body {
+  transition: opacity 0.4s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  border-radius: 0 0 12px 12px;
+  background: #f5f5f5;
+  color: #00337c;
+  border-top: none;
+  opacity: 1;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.accordion-body:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.accordion-item {
+  margin-bottom: 8px;
+  background: transparent;
+  border: none;
+}
+.accordion-item .accordion-button:hover {
+  background-color: #ebebeb;
+}
+/* ==========>>> End questions <<<========== */
+
+/* ===========================================
+==========>>> Start File Course <<<=========
+==============================================
+*/
+.video-thumbnail {
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  max-width: 900px;
+}
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 16px;
+  display: block;
+}
+.video-thumbnail button {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+}
+#playBtnVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.rounded h6 {
+  color: #00337c !important;
+}
+
+[dir="rtl"] .course-desc{
+  border-right: 3px solid #1976f3;  
+  padding-right: 16px;
+}
+[dir="rtl"] .border-start{
+  border-left: none !important;
+}
+/* ==========>>> Contact Us Section Custom <<<========== */
+.contact-us-section .icon-contact {
+  color: #00337c !important;
+}
+.course .btn-contact,
+.contact-us-section .btn-contact {
+  background-color: #0049af;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+.course .btn-contact:hover,
+.course .btn-contact:focus,
+.contact-us-section .btn-contact:hover,
+.contact-us-section .btn-contact:focus {
+  background-color: #00337c;
+  color: #fff;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+.text-center {
+  color: #0049af;
+}
+.text-center hr,
+.card-body hr {
+  width: 80px;
+  border-top: 3px solid;
+  opacity: 1;
+}
+form .fs-4 {
+  padding: 10px 0 10px 0;
+}
+textarea {
+  resize: none;
+  height: 94px;
+}
+.address,
+.phone,
+.email {
+  color: #0049af;
+}
+.contact-logo-box {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.contact-logo-box img {
+  width: 150px;
+}
+.course {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+<<<<<<< HEAD
+=======
+
+.title-full {
+  text-align: center !important;
+}
+>>>>>>> b44bd2a2a35ac33949524d12694d4ed6535fb75f
