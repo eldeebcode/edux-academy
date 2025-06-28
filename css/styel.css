@@ -105,6 +105,35 @@ body {
   font-size: 20px;
   color: #00337c;
 }
+
+.imge-log {
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+.imge-log img {
+  width: 100%;
+}
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: #eeeeee21;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #0049af;
+}
+.btn-success {
+  background-color: #0049af;
+}
+.btn-success:hover {
+  background-color: #00337c;
+}
+.hidden {
+  display: none;
+}
 .badge-custom {
   position: absolute;
   top: -10px;
@@ -664,11 +693,11 @@ iframe {
   color: #00337c !important;
 }
 
-[dir="rtl"] .course-desc{
-  border-right: 3px solid #1976f3;  
+[dir="rtl"] .course-desc {
+  border-right: 3px solid #1976f3;
   padding-right: 16px;
 }
-[dir="rtl"] .border-start{
+[dir="rtl"] .border-start {
   border-left: none !important;
 }
 /* ==========>>> Contact Us Section Custom <<<========== */
@@ -730,10 +759,7 @@ textarea {
   justify-content: space-around;
   align-items: center;
 }
-<<<<<<< HEAD
-=======
 
 .title-full {
   text-align: center !important;
 }
->>>>>>> b44bd2a2a35ac33949524d12694d4ed6535fb75f

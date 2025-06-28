@@ -28,7 +28,7 @@
   <body>
     <!-- ==========>>> Start NavBar <<<========== -->
 
-  <nav id="navbar" class="navbar navbar-expand-lg">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img class="imge-logo" src="imges/logo.webp" alt="logo" loading="lazy" />
@@ -40,13 +40,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-
           <!-- All links NavBar -->
           <li class="nav-item">
-            <a class="activ nav-link" aria-current="page" href="index.html" data-lang="nav_home">Home</a>
+            <a class="active nav-link" aria-current="page" href="index.html" data-lang="nav_home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="about-us.html" data-lang="nav_about">About Us</a>
+            <a class="nav-link" href="about-us.html" data-lang="nav_about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Contact-us.html" data-lang="nav_contact">Contact Us</a>
@@ -54,29 +53,46 @@
         </ul>
 
         <!-- input Search -->
-        <div class="search">
-          <input type="text" placeholder="Search Courses" class="Searchbar" />
-          <i class="bi bi-search"></i>
-        </div>
-        <a class="nav-link" href="login.html" role="button">
-          <div class="login">
-            <span data-lang="nav_login">login</span>
+        <div class="search col-12 col-lg-3 my-2 my-lg-0">
+          <div class="input-group">
+            <input type="text" class="form-control" id="search" placeholder="Search Courses"
+              aria-label="Search Courses" />
+            <span class="input-group-text">
+              <i class="bi bi-search"></i>
+            </span>
           </div>
-        </a>
+        </div>
+        <div class="login-ar d-flex col-12 col-lg-4">
+          <a class="nav-link col-5" href="login.html" role="button">
+            <div class="login text-center">
+              <span class="btn text-white" data-lang="nav_login">login</span>
+            </div>
+          </a>
 
-                  <!-- Language -->
-          <button id="lang-toggle" class="btn btn-primary">Ar</button>
-
-        <div class="shoping">
-          <button>
-            <i class="bi bi-cart"></i>
+          <!-- Language -->
+          <button id="lang-toggle" class="language btn btn-primary col-3 col-lg-3">
+            Ar
           </button>
-          <span id="cart" class="cart">0</span>
-          <span> | </span>
-          <button>
-            <i class="bi bi-bell"></i>
-          </button>
-          <span id="Notice" class="Notice">1</span>
+          <div class="icon-container d-flex-center col-3">
+            <div class="position-relative">
+              <a href="#">
+                <span class="cart-icon">
+                  <i class="bi bi-cart"></i>
+                  <span class="badge-custom d-flex-center" id="cart-badge"></span>
+                </span>
+              </a>
+            </div>
+            <div class="position-relative">
+              <a href="#">
+                <span class="bell-icon">
+                  <span id="Notice" class="Notice">
+                    <i class="bi bi-bell"></i>
+                  </span>
+                  <span class="badge-custom d-flex-center" id="bell-badge"></span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
